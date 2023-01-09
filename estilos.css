@@ -10,7 +10,7 @@ html {
 
 body {
     /* tengo que editar la imagen para bajarle la opacidad */
-    background-image: url("Recursos/Imagenes/fondo.jpg");
+    /* background-image: url("Recursos/Imagenes/fondo.jpg"); */
     background-attachment: inherit;
     background-size: contain;
 }

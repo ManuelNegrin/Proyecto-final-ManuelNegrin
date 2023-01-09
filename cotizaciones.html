@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cotizaciones</title>
-    <link rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="icon" type="image/x-icon" href="./Recursos/Imagenes/Atico-icono.ico">
 </head>
 <body>
@@ -19,13 +19,22 @@
                 <a class="header__menu-item" href="./index.html">Inicio</a>
                 <a class="header__menu-item" href="./nosotros.html">Nosotros</a>
                 <a class="header__menu-item" href="./nuestrotrabajo.html">Nuestro trabajo</a>
-                <a class="header__menu-item" href="">Contacto</a>
+                <a class="header__menu-item" href="./contacto.html">Contacto</a>
                 <a class="header__menu-item" href="./cotizaciones.html">Cotizaciones</a>
             </ul>
         </section>
     </header>
 
     <main class="contenido">
+        <section class="contenido__nosotros">
+            <p>Bienvenidos a nuestra área de cotizaciones.</p>
+            <p>Aquí vas a poder presentarnos los muebles que desees intervenir para darles una nueva oportunidad.</p>
+        </section>
+        <section class="contenido__nosotros">
+            <p>En este proceso nos parece muy importante la comunicación, por lo que te pedimos que nos detalles tus gustos en colores y estilos, más la nueva funcionalidad que te interesaría darle a tu mueble.</p>
+            <!-- <p>Aquí vas a poder evacuar todas estás dudas y más.</p> -->
+        </section>
+
         <section>
             <form class="contenido__formulario" action="">
                 <ul class="contenido__formulario-nombres">
@@ -41,12 +50,16 @@
                     <li>
                         <label for="Descripcion">Descripción del mueble:</label>
                     </li>
+                    <li>
+                        <label for="Foto">Sube la foto de tu mueble:</label>
+                    </li>
                 </ul>
                 <ul class="contenido__formulario-campos">
                     <li><input type="text" name="nombre" id="nombre"></li>
                     <li><input type="text" name="mail" id="mail"></li>
                     <li><input type="text" name="telefono" id="telefono"></li>
                     <li class="contenido__formulario-campos-descripcion"><input type="text" name="descripcion" id="descripcion"></li>
+                    <li><input type="file" name="foto" id="foto"></li>
                 </ul>
                 <button class="contenido__boton">Enviar</button>
             </form>
