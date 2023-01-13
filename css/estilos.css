@@ -30,7 +30,7 @@ body {
   text-align: left;
   text-shadow: 15px;
   margin: 5px;
-  background-color: #000; }
+  background-color: black; }
 
 .header__titulo-imagen {
   display: flex;
@@ -39,6 +39,10 @@ body {
   margin-right: auto;
   background-color: #000;
   height: 150px; }
+
+.footer__titulo {
+  background-color: #000;
+  color: #94ffca; }
 
 .contenido {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
