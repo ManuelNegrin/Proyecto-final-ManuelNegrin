@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cotizaciones</title>
     <link rel="stylesheet" href="css/estilos.css"/>
+    <script defer src="scriptCotizaciones.js"></script>
     <link rel="icon" type="image/x-icon" href="./Recursos/Imagenes/Atico-icono.ico">
 </head>
 <body>
@@ -39,29 +40,33 @@
             <form class="contenido__formulario" action="">
                 <ul class="contenido__formulario-nombres">
                     <li>
-                        <label for="nombre">Nombre:</label>
+                        <label for="Tipo" id="descripcionTipo">Tipo:</label>
                     </li>
                     <li>
-                        <label for="mail">Email:</label>
+                        <label for="Estilo">Estilo:</label>
                     </li>
                     <li>
-                        <label for="Telefono">Telefono:</label>
+                        <label for="Tamaño">Tamaño:</label>
                     </li>
                     <li>
-                        <label for="Descripcion">Descripción del mueble:</label>
+                        <label for="Pintura">Pintura:</label>
+                    </li>
+                    <li>
+                        <label for="Restauración">Restauración:</label>
                     </li>
                     <li>
                         <label for="Foto">Sube la foto de tu mueble:</label>
                     </li>
                 </ul>
                 <ul class="contenido__formulario-campos">
-                    <li><input type="text" name="nombre" id="nombre"></li>
-                    <li><input type="text" name="mail" id="mail"></li>
-                    <li><input type="text" name="telefono" id="telefono"></li>
-                    <li class="contenido__formulario-campos-descripcion"><input type="text" name="descripcion" id="descripcion"></li>
-                    <li><input type="file" name="foto" id="foto"></li>
+                    <li><input type="text" name="Tipo" id="tipoFormulario"></li>
+                    <li><input type="text" name="Estilo" id="estiloFormulario"></li>
+                    <li><input type="text" name="Tamaño" id="tamañoFormulario"></li>
+                    <li><input type="text" name="Restauración" id="restauracionFormulario"></li>
+                    <li class="contenido__formulario-campos-descripcion"><input type="text" name="Pintura" id="pinturaFormulario"></li>
+                    <li><input type="file" name="foto" id="fotoFormulario"></li>
                 </ul>
-                <button class="contenido__boton">Enviar</button>
+                <p class="contenido__boton" id="botonFormulario">Enviar</p>
             </form>
         </section>
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/oHyCZxdLfXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
