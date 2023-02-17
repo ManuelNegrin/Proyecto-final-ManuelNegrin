@@ -58,6 +58,7 @@ body {
   margin-left: 10%; }
 
 .contenido__boton {
+  text-align: center;
   background-color: #fda500;
   border-radius: 5px 5px 5px 5px;
   /* padding: 10px; */
@@ -153,6 +154,13 @@ body {
   margin: 50px; }
 
 .contenido__formulario-nombres {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  grid-column: 1; }
+
+.contenido__formulario-descripcion {
+  font-family: Arial, Helvetica, sans-serif;
   align-items: center;
   justify-content: center;
   list-style: none;
