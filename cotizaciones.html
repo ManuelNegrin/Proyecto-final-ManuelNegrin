@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cotizaciones</title>
-    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="estilos.css"/>
     <script defer src="scriptCotizaciones.js"></script>
     <link rel="icon" type="image/x-icon" href="./Recursos/Imagenes/Atico-icono.ico">
 </head>
@@ -41,29 +41,89 @@
                 <ul class="contenido__formulario-nombres">
                     <li>
                         <label for="Tipo" id="descripcionTipo">Tipo:</label>
+                        <div class='separador' id="separadorTipo">
+                            <div class='option' >Ropero</div>
+                            <div class='option' >Mesa</div>
+                            <div class='option' >Recibidor</div>
+                            <div class='option' >Aparador</div>
+                            <div class='option' >Cristalero</div>
+                            <div class='option' >Bar</div>
+                            <div class='option' >Comoda</div>
+                        </div>
                     </li>
                     <li>
                         <label for="Estilo">Estilo:</label>
+                        <div class='separador' id="separadorEstilo">
+                            <div class='option' >Nordico</div>
+                            <div class='option' >Provenzal</div>
+                            <div class='option' >Americano</div>
+                            <div class='option' >Frances</div>
+                        </div>
                     </li>
                     <li>
                         <label for="Tamaño">Tamaño:</label>
+                        <div class='separador' id="separadorTamaño">
+                            <div class='option' >Grande</div>
+                            <div class='option' >Mediano</div>
+                            <div class='option' >Chico</div>
+                        </div>
                     </li>
                     <li>
                         <label for="Pintura">Pintura:</label>
+                        <div class='separador' id="separadorPintura">
+                            <div class='option' >Color básico</div>
+                            <div class='option' >Color personalizado</div>
+                        </div>
                     </li>
                     <li>
                         <label for="Restauración">Restauración:</label>
+                        <div class='separador' id="separadorRest">
+                            <div class='option'>Restauración total</div>
+                            <div class='option'>Restauración parcial</div>
+                            <div class='option'>Restauración minima</div>
+                            <div class='option'>Solo pintura</div>
+                        </div>
                     </li>
                     <li>
                         <label for="Foto">Sube la foto de tu mueble:</label>
                     </li>
                 </ul>
                 <ul class="contenido__formulario-campos">
-                    <li><input type="text" name="Tipo" id="tipoFormulario"></li>
-                    <li><input type="text" name="Estilo" id="estiloFormulario"></li>
-                    <li><input type="text" name="Tamaño" id="tamañoFormulario"></li>
-                    <li><input type="text" name="Restauración" id="restauracionFormulario"></li>
-                    <li class="contenido__formulario-campos-descripcion"><input type="text" name="Pintura" id="pinturaFormulario"></li>
+                    <li><p id="tipoDeMueble" class="input">Ingrese tipo del mueble</p></li>
+                    <div class='desplegable' id="menuTipo">
+                        <div class='option' id='tipoRopero'>Ropero</div>
+                        <div class='option' id='tipoMesa'>Mesa</div>
+                        <div class='option' id='tipoRecibidor'>Recibidor</div>
+                        <div class='option' id='tipoAparador'>Aparador</div>
+                        <div class='option' id='tipoCristalero'>Cristalero</div>
+                        <div class='option' id='tipoBar'>Bar</div>
+                        <div class='option' id='tipoComoda'>Comoda</div>
+                    </div>
+                    <li><p id="estiloDeMueble" class="input">Ingrese estilo del mueble</p></li>
+                    <div class='desplegable' id="menuEstilo">
+                        <div class='option' id='estiloNord'>Nordico</div>
+                        <div class='option' id='estiloProv'>Provenzal</div>
+                        <div class='option' id='estiloAm'>Americano</div>
+                        <div class='option' id='estiloFr'>Frances</div>
+                    </div>
+                    <li><p id="tamañoDeMueble" class="input">Ingrese tamaño del mueble</p></li>
+                    <div class='desplegable' id="menuTamaño">
+                        <div class='option' id='tamañoGrande'>Grande</div>
+                        <div class='option' id='tamañoMediano'>Mediano</div>
+                        <div class='option' id='tamañoChico'>Chico</div>
+                    </div>
+                    <li><p id="pinturaDeMueble" class="input">Ingrese pintura del mueble</p></li>
+                    <div class='desplegable' id="menuPintura">
+                        <div class='option' id='pinturaBasico'>Color básico</div>
+                        <div class='option' id='pinturaPers'>Color personalizado</div>
+                    </div>
+                    <li><p id="restauracionDeMueble" class="input">Ingrese restauración del mueble</p></li>
+                    <div class='desplegable' id="menuRest">
+                        <div class='option' id='restTotal'>Restauración total</div>
+                        <div class='option' id='restParcial'>Restauración parcial</div>
+                        <div class='option' id='restMin'>Restauración minima</div>
+                        <div class='option' id='restPïnt'>Solo pintura</div>
+                    </div>
                     <li><input type="file" name="foto" id="fotoFormulario"></li>
                 </ul>
                 <p class="contenido__boton" id="botonFormulario">Enviar</p>

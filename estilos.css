@@ -191,6 +191,27 @@ body {
     padding-bottom: 10px;
 } */
 
+.input {
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    margin-top: 5px ;
+}
+
+.desplegable {
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    border-color: #000;
+    border-width: 1px;
+    display: none;
+}
+
+.separador {
+    color: rgb(217, 249, 220);
+    display: none;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
