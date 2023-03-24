@@ -6,12 +6,25 @@
     <title>Nuestro trabajo</title>
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="icon" type="image/x-icon" href="./Recursos/Imagenes/Atico-icono.ico">
+    <script defer src="inicioSesion.js"></script>
+    <script defer src="stock.js"></script>
+    <script defer src="scriptTienda.js"></script>
 </head>
 <body>
     <header>
         <Section class="header__titulo">
             <h2 class="header__titulo-h1">El Áticô</h2>
-            <img class="header__titulo-imagen" src="/Recursos/Imagenes/Atico-logo.jpeg" alt="">  
+            <img class="header__titulo-imagen" src="/Recursos/Imagenes/Atico-logo.jpeg" alt="">
+            <form class="header__menu-item" id="formInicio">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <button class="contenido__boton" type="button" onclick="signIn()">Sign In</button>
+                <button class="contenido__boton" type="button" onclick="registrar()">Registrarme</button>
+            </form>
         </Section>
         <section class="header__menu">
             <ul>
@@ -29,8 +42,8 @@
             <section class="contenido__stock">
                 <h2>Productos en stock</h2>
             </section>
-            <section class="contenido__tarjeta">
-                <article class="contenido__tarjeta-articulo">
+            <section id= 'contenedorProductos' class="contenido__tarjeta">
+                <!-- <article class="contenido__tarjeta-articulo">
                     <div>
                         <img class="contenido__tarjeta-imagen" src="./Recursos/Imagenes/silla.jpeg" alt="">
                     </div>
@@ -82,7 +95,7 @@
                     <h3 class="contenido__tarjeta-titulo">Espejo</h3>
                     <p class="contenido__tarjeta-descripcion">Espejo estilo provenzal restaurado</p>
                     <a href="">Ver producto</a>
-                </article>
+                </article> -->
             </section>
         </section>
             <section class="contenido__proyectos">

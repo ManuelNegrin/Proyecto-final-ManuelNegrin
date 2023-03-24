@@ -173,6 +173,13 @@ body {
     margin: 50px;
 }
 
+.contenido__formulario-presupuesto {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    display: none;
+}
+
 .contenido__formulario-nombres {
     align-items: center;
     justify-content: center;

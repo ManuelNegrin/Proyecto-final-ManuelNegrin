@@ -6,13 +6,23 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="icon" type="image/x-icon" href="./Recursos/Imagenes/Atico-icono.ico">
+    <script defer src="inicioSesion.js"></script>
 </head>
 <body>
     <header>
         <Section class="header__titulo">
             <h2 class="header__titulo-h1">El Áticô</h2>
             <img class="header__titulo-imagen" src="/Recursos/Imagenes/Atico-logo.jpeg" alt="">
-    
+            <form class="header__menu-item" id="formInicio">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <button class="contenido__boton" type="button" onclick="signIn()">Sign In</button>
+                <button class="contenido__boton" type="button" onclick="registrar()">Registrarme</button>
+            </form>
         </Section>
         <section class="header__menu">
             <ul>
